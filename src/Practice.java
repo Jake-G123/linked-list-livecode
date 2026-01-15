@@ -7,12 +7,8 @@ public class Practice {
         ryan.next.next = new Node('x', null);
 
         printList(head);
-    }
-
-    public static void printList(Node current) {
-        while (current != null) {
-            System.out.println(current.value);
-            current = current.next;
-        }
+        System.out.println(contains(head,'x'));
+        System.out.println(remove(head, 't'));
+        printList(head);
     }
 }
